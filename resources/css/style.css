@@ -1,0 +1,42 @@
+  {
+    border: 1px solid black;
+}
+
+html {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 16px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*  HEADER AND NAV  */
+.header-mobile {
+    display: none;
+}
+
+.header-desktop {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+.menu-desktop {
+    display: block;
+    position: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #9c9c9c;
+    padding: 0 1rem;
+}
+
+nav li a:hover {
+    color: #455e87;
+    font-weight: 700;
+}
