@@ -58,7 +58,7 @@ nav li a:hover {
 
 .jumbotron img {
     display: flex;
-    padding-top: 12rem;
+    padding-top: 13rem;
     margin: auto;
     height: 40%;
 }
@@ -66,9 +66,13 @@ nav li a:hover {
 .subhead {
     text-align: center;
     color: white;
-    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
 }
 
 .jumbotron h2 {
     font-weight: 100; 
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    letter-spacing: 1px;
 }
