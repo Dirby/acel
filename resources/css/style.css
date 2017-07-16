@@ -18,7 +18,8 @@ html {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: auto;
+    align-items: center;
+    height: 50px;
 }
 
 .menu-desktop {
@@ -28,15 +29,46 @@ html {
 
 nav ul {
     display: flex;
+    list-style: none;
 }
 
 nav li a {
     text-decoration: none;
-    color: #9c9c9c;
-    padding: 0 1rem;
+    color: #005960;
+    padding: 0 3rem;
 }
 
 nav li a:hover {
     color: #455e87;
     font-weight: 700;
+}
+
+/*  JUMBOTRON  */
+.jumbotron {
+    display: block;
+    width: 100%;
+    max-width: 1024px;
+    height: 55rem;
+    background-image: url(../images/commercial_11a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -150px;
+}
+
+.jumbotron img {
+    display: flex;
+    padding-top: 12rem;
+    margin: auto;
+    height: 40%;
+}
+
+.subhead {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.jumbotron h2 {
+    font-weight: 100; 
 }
