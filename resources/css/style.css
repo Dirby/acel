@@ -1,4 +1,4 @@
- {
+* {
     border: 1px solid blue;
 }
 
@@ -34,7 +34,6 @@ html, body {
 
 nav ul {
     display: flex;
-    list-style: none;
 }
 
 nav li a {
@@ -81,11 +80,10 @@ nav li a:hover {
 }
 
 /*   ABOUT US SECTION   */
-.about-section {
+.about-container {
     display: inline-flex;
     width: 100%;
     height: auto;
-    max-width: 1024px;
     align-items: top;
     margin-top: 5rem;
 }
@@ -109,22 +107,48 @@ nav li a:hover {
 
 /*   SERVICES SECTION   */
 .services-container {
-    display: flex;
-    max-width: 1024px;
-    padding-top: 5rem;
-}
-
-.services-img {
-    display: flex;
+    display: block;
     width: 100%;
-    min-width: 500px;
+    padding-bottom: 2rem;
 }
 
-.services-text {
+.services-img img {
+    display: flex;
+    padding-top: 5rem;
+    width: 100%;
+    height: auto;
+}
+
+.services-content {
     display: block;
     width: 80%;
     padding: 0 50px 0 100px;
     margin-top: 2rem;
     color: #808080;
+}
+
+.section-title {
+    display: block;
+}
+
+.services-text {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.services-list {
+    display: flex;
+    font-size: 1.1rem;
+    line-height: 2.5;
+    width: 200%;
+    padding: 0 5rem 0 2rem;
+}
+
+.services-list li {
+    list-style-type: armenian;
+}
+
+.services-para {
+    display: flex;
     line-height: 1.5;
 }
