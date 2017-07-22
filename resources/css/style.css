@@ -18,6 +18,30 @@ html, body {
     display: none;
 }
 
+.title-bar {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    width: 100%;
+    max-width: 1024px;
+    background-color: white;
+}
+
+.logo-box {
+    display: flex;
+    padding-left: 24px;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    height: auto;
+    width: auto;
+    padding-right: 10px;
+}
+
 .header-desktop {
     display: flex;
     width: 100%;
@@ -138,14 +162,10 @@ nav li a:hover {
 
 .services-list {
     display: flex;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 2.5;
-    width: 200%;
-    padding: 0 5rem 0 2rem;
-}
-
-.services-list li {
-    list-style-type: armenian;
+    width: 100%;
+    padding: 0 3rem 0 2rem;
 }
 
 .services-para {
