@@ -100,6 +100,11 @@ nav li a {
     text-decoration: none;
     color: #005960;
     padding: 0 4rem;
+    border-right: 1px solid #005960
+}
+
+#con {
+    border: none;
 }
 
 nav li a:hover {
@@ -153,12 +158,13 @@ nav li a:hover {
     width: 100%;
     padding: 0 50px 0 100px;
     color: #808080;
+    font-size: 1.25rem;
     line-height: 1.5;
 }
 
 .section-title {
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.75rem;
     color: #005960;
 }
 
@@ -199,7 +205,7 @@ nav li a:hover {
 
 .services-list {
     display: flex;
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 2.5;
     width: 100%;
     padding: 0 3rem 0 2rem;
@@ -208,9 +214,15 @@ nav li a:hover {
 .services-para {
     display: flex;
     line-height: 1.5;
+    font-size: 1.25rem;
 }
 
 /*  CONTACT US SECTION  */
+.contact-img {
+    width: 100%;
+    max-width: 1024px;
+}
+
 .contact-content {
     display: block;
     text-align: center;
@@ -222,7 +234,7 @@ nav li a:hover {
 /*  STYLES FORM TEXT  */
 form {
     color: #808080;
-    line-height: 2.5rem;
+    line-height: 1rem;
 }
 
 input[type=text] { /* STYLES THE TEXT FIELD BOX */
@@ -230,26 +242,23 @@ input[type=text] { /* STYLES THE TEXT FIELD BOX */
     border-radius: 4px;
     height: 24px;
     width: 100%;
-    margin-left: 20px;
+    margin: auto;
     padding-left: 10px;
 }
 
 #f100 {
     display: block;
-    width: 95%;
-    
+    justify-content: center;
+    width: 50%;
 }
 
-#f200 {
-    display: inline-block;
-    width: 45%;
-    justify-content: space-between
-}
-
-#f300 {
-    display: inline-block;
-    float: none;
-    width: 45%;
+#comment {
+    width: 100%;
+    border: 2px solid #669900;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
 }
 
 /* STYLES THE SUBMIT BUTTON */
@@ -261,4 +270,5 @@ input[type=submit] {
     font-size: .75rem;
     background-color: #669900;
     color: white;
+    margin-top: 20px
 }

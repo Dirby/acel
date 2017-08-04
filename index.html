@@ -37,7 +37,7 @@
                 <li><a href="#about">ABOUT US</a></li>
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#">PHOTOS</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
+                <li><a id="con" href="#contact">CONTACT US</a></li>
             </ul>
         </nav>
             
@@ -112,11 +112,19 @@
             <img src="resources/images/contact.png">
         </div>
 
+        <h3 class="section-title">CONTACT US</h3>
+          
         <div class="contact-content">
               <form action="/action_page.php">
                 <input type="text" name="fullname" id="f100" placeholder="Name (Required)"><br>
-                <input type="text" name="email" id="f200" placeholder="Email (Required)">
-                <input type="text" name="phone" id="f200" placeholder="Phone"><br>
+                <input type="text" name="email" id="f100" placeholder="Email (Required)">
+                <input type="text" name="phone" id="f100" placeholder="Phone"><br>
+                  
+                <input type="text" name="address" id="f100" placeholder="Street Address"><br>
+                <input type="text" name="city" id="f100" placeholder="City">
+                <input type="text" name="state" id="f100" placeholder="State"><br>
+                  
+                <textarea id="comment" name="comment" rows="4" cols="127" placeholder="How Can We Help You?"></textarea>
                 
                 <input type="submit" value="Submit">
               </form>
