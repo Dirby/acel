@@ -333,7 +333,16 @@ nav li a:hover {
 
 /* ---------- JQUERIES ---------- */
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 800px) {
+    nav li a {
+    text-decoration: none;
+    color: #005960;
+    font-size: 1rem;
+    padding: 0 2rem;
+    border-right: 1px solid #005960
+}
+
+@media only screen and (max-width: 700px) {
 
 /* ---------- MENU MOBILE -------- */
 
@@ -345,10 +354,9 @@ nav li a:hover {
     display: block;
     position: fixed;
     width: 100%;
-    max-width: 1024px;
     justify-content: center;
     align-items: center;
-    height: 85px;
+    height: 64px;
     margin-top: -15px;
     border-bottom: 1px solid #005960;
     background-color: #f5f0e7;
@@ -361,10 +369,9 @@ nav li a:hover {
     position: fixed;
     align-items: center;
     justify-content: space-between;
-    height: 64px;
+    height: 68px;
     width: 100%;
-    max-width: 1024px;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .logo-box {
@@ -384,12 +391,40 @@ nav li a:hover {
     font-size: 1.25rem;
 }
 
-.hamburger {  
+.hamburger div {  
     display: block;
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
+    width: 25px;
+    height: 3px;
+    background-color: #005960;
+    margin: 4px 20px 0px 4px;
     }
 
+.subhead {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 15px #001a00;
+}
+
+.jumbotron h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    }
+    
+.about-crew img {
+    display: none;
+    }
+    
+.about-text {
+    font-size: 1rem;
+    }
+    
+.services-list, .services-text p {
+    font-size: 1rem;
+    }
+    
+.contact-subhead, .contact-info li {
+    font-size: 1rem;
+    } 
 }
