@@ -28,10 +28,6 @@ html {
     z-index: 2;
 }
 
-.header-mobile {
-    display: none;
-}
-
 .title-bar {
     display: flex;
     position: fixed;
@@ -82,7 +78,11 @@ html {
 }
 
 
-/* ---------- NAV BAR ---------- */
+/* ---------- NAV BAR DESKTOP ---------- */
+
+.header-mobile {
+    display: none;
+}
 
 .menu-desktop {
     display: flex;
@@ -90,6 +90,7 @@ html {
     margin-top: 60px;
     width: 100%;
     max-width: 1000px;
+    min-width: 761px;
     justify-content: center;
 }
 
@@ -303,53 +304,92 @@ nav li a:hover {
     width: 80%;
 }
 
-.contact-form {
+.contact-subhead, .contact-info {
     display: block;
-    text-align: center;
     line-height: 2rem;
-    width: 100%;
-}
-
-/*  STYLES FORM TEXT  */
-form {
-    display: block;
+    text-align: left;
+    font-size: 1.25rem;
     color: #808080;
-    line-height: 1rem;
-}
-
-input[type=text] { /* STYLES THE TEXT FIELD BOX */
-    border: 2px solid #669900;
-    border-radius: 4px;
-    height: 24px;
     width: 100%;
-    margin: auto;
-    padding-left: 10px;
+    padding-left: 2rem;
 }
 
-#f100 {
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.col-left {
+    text-align: right;
+    font-size: 1.25rem;
+}
+
+.col-right {
+    padding-left: 2rem;
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* ---------- JQUERIES ---------- */
+
+@media only screen and (max-width: 760px) {
+
+/* ---------- MENU MOBILE -------- */
+
+.header-desktop {
+        display: none;
+    }
+
+.header-mobile {
     display: block;
-    width: 50%;
-    margin-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    max-width: 1024px;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    margin-top: -15px;
+    border-bottom: 1px solid #005960;
+    background-color: #f5f0e7;
+    background-image: url(../images/leaf_pattern.png);
+    z-index: 2;
 }
 
-#comment {
+.title-bar {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    width: 100%;
+    max-width: 1024px;
+    font-size: 1.25rem;
+}
+
+.logo-box {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.logo-box a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #005960;
+}
+
+.logo-box .acel {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.hamburger {  
     display: block;
-    width: 50%;
-    border: 2px solid #669900;
-    border-radius: 4px;
-    margin: 0 auto;
-    padding-left: 10px;
-    font-size: 0.75rem;
-}
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    }
 
-/* STYLES THE SUBMIT BUTTON */
-input[type=submit] {
-    border: none;
-    border-radius: 4px;
-    height: 24px;
-    width: 100px;
-    font-size: .75rem;
-    background-color: #669900;
-    color: white;
-    margin-top: 20px
 }

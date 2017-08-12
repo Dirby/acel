@@ -12,7 +12,6 @@
       
       <link rel="icon" href="./resources/images/acel_tree.ico" type="image/x-icon">
       
-      <script type="text/javascript" src="resources/scripts/main.js"></script>
   </head>
 
     
@@ -43,15 +42,23 @@
             
     </header>
         
-    <header class="header-mobile">
-        <nav>
-            <ul>
-                <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
-                <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
-                <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
-                <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
-            </ul>
-        </nav>    
+    <!--  MOBILE SECTION  -->  
+    <header class="menu-mobile">
+        <div class="title-bar">
+            <div class="logo-box">
+                <img class="icon" src="./resources/images/acel_tree-circle.png">
+                <h5><a href="index.html" class="acel">ACEL </a><a href="index.html" class="maintenance">MAINTENANCE</a>
+                </h5>
+            </div>
+
+            <div class="menu-mobile">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            </div>    
     </header>
       
     <!--   JUMBOTRON SECTION   -->
@@ -149,22 +156,21 @@
         <div class="contact-content">
           <h3 class="section-title">CONTACT US</h3>
           
-          <div class="contact-form">
-              <form action="/action_page.php">
-                <input type="text" name="fullname" id="f100" placeholder="Name (Required)">
-                <input type="text" name="email" id="f100" placeholder="Email (Required)">
-                <input type="text" name="phone" id="f100" placeholder="Phone">
-                  
-                <input type="text" name="address" id="f100" placeholder="Street Address">
-                <input type="text" name="city" id="f100" placeholder="City">
-                <input type="text" name="state" id="f100" placeholder="State"><br>
-                  
-                <textarea id="comment" name="comment" rows="8" placeholder="How Can We Help You?"></textarea>
-                
-                <input type="submit" value="Submit">
-              </form>
+          <div class="contact-subhead">
+              <p>How can we help you? Contact us by phone, text or email.<br><br></p>
           </div>
-      </div>
+          <div class="contact-info">
+              <ul class="col-left">
+                  <li>Call or text:</li>
+                  <li>Email:</li>
+              </ul>
+              
+              <ul class="col-right">
+                  <li>623-363-8755</li>
+                  <li>Grassmanaz@hotmail.com</li>
+              </ul>
+          </div>    
+        </div>
     </div>
   </body>
 </html>
